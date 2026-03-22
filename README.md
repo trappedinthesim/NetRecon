@@ -73,7 +73,7 @@ sudo apt install -y nodejs nmap
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/brutalnet/netrecon.git ~/netrecon
+git clone https://github.com/trappedinthesim/NetRecon.git ~/netrecon
 cd ~/netrecon
 ```
 
