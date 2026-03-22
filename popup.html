@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NetRecon</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+
+  <!-- ── Header ── -->
+  <header class="app-header">
+    <div class="app-logo">
+      <span class="logo-bracket">[</span>NetRecon<span class="logo-bracket">]</span>
+    </div>
+    <div id="agent-status" class="agent-status disconnected">
+      <span class="status-dot"></span> Agent Offline
+    </div>
+  </header>
+
+  <!-- ── Body ── -->
+  <div class="app-body">
+
+    <!-- Sidebar nav -->
+    <nav class="sidebar" id="sidebar">
+      <div class="nav-group-label">RECON</div>
+      <button class="nav-item" data-module="nmap"      title="Nmap Scanner">     <span class="ni">⬡</span> Nmap      <span class="na">⚡</span></button>
+      <button class="nav-item" data-module="dns"       title="DNS Recon">         <span class="ni">◈</span> DNS       <span class="na">⚡</span></button>
+      <button class="nav-item" data-module="whois"     title="WHOIS Lookup">      <span class="ni">◎</span> WHOIS     <span class="na">⚡</span></button>
+      <button class="nav-item" data-module="ssl"       title="SSL/TLS Inspector"> <span class="ni">⬡</span> SSL/TLS   <span class="na">⚡</span></button>
+      <button class="nav-item" data-module="ports"     title="Port Scanner">      <span class="ni">◈</span> Ports     <span class="na">⚡</span></button>
+
+      <div class="nav-divider"></div>
+      <div class="nav-group-label">ANALYSIS</div>
+      <button class="nav-item" data-module="headers"   title="HTTP Headers">      <span class="ni">◎</span> Headers</button>
+      <button class="nav-item" data-module="subdomains" title="Subdomain Enum">   <span class="ni">⬡</span> Subdoms   <span class="na">⚡</span></button>
+      <button class="nav-item" data-module="geo"       title="IP Geo & ASN">      <span class="ni">◈</span> IP Geo</button>
+      <button class="nav-item" data-module="cve"       title="CVE Lookup">        <span class="ni">◎</span> CVE</button>
+      <button class="nav-item" data-module="reverseip" title="Reverse IP">        <span class="ni">⬡</span> Rev IP</button>
+
+      <div class="nav-divider"></div>
+      <button class="nav-item" data-module="history"   title="Scan History">      <span class="ni">☰</span> History</button>
+
+      <div class="sidebar-footer">
+        <span class="agent-key">⚡</span> = requires agent
+      </div>
+    </nav>
+
+    <!-- Content area — modules render here -->
+    <main id="content" class="content-area"></main>
+
+  </div>
+
+  <!-- Auth reminder banner (dismissible) -->
+  <div id="auth-banner" class="auth-banner">
+    ⚠ Only scan systems you own or have written authorisation to test.
+    <button id="auth-dismiss">×</button>
+  </div>
+
+  <script type="module" src="popup.js"></script>
+</body>
+</html>
