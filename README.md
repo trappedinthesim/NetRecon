@@ -8,6 +8,8 @@ Built for security researchers, CTF players, and pentesters who want recon tools
 
 → **[brutal.net/netrecon](https://brutal.net/netrecon/)**
 
+![NetRecon extension — Nmap scan of google.com showing open ports](https://brutal.net/img/net-recon.png)
+
 ![NetRecon version](https://img.shields.io/badge/version-1.0.3-3fb950?style=flat-square)
 ![Chrome MV3](https://img.shields.io/badge/Chrome-MV3-4a6ef5?style=flat-square)
 ![Node.js](https://img.shields.io/badge/Node.js-18%2B-339933?style=flat-square)
